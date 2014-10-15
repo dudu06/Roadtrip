@@ -1,0 +1,68 @@
+
+/*************
+ANIMATIONS
+*************/
+
+/*We set our animation to linear so it will move at the same speed through out our 
+animation.*/
+
+#mountains {
+	/*-webkit-animation: move-mountain linear 30s infinite;--FOR WEBKIT LINEAR*/
+	-webkit-animation: move-mountain 5000s linear infinite;
+	/*-webkit-animation-direction: reverse;*/
+	/*-webkit-animation-iteration-count: infinite;*/
+}
+
+#clouds1 {
+	-webkit-animation: move-first-clouds 5000s linear infinite;
+}
+
+#clouds2 {
+	-webkit-animation: move-second-clouds 4000s linear infinite;
+}
+
+#ground {
+	-webkit-animation: move-ground 1750s linear infinite;
+	/*WE CAN MAKE OUR ANIMATION SLOWER OR FASTER DEPENDANT ON THE TIME IT RUNS AT. 
+	IN THIS CASE, IT RUNS AT 2000s.*/
+}
+
+#cactus {
+	-webkit-animation: move-cactus 8500s linear infinite;
+	/*WE CAN MAKE OUR ANIMATION SLOWER OR FASTER DEPENDANT ON THE TIME IT RUNS AT*/
+}
+
+
+/*************
+KEYFRAMES
+*************/
+
+@-webkit-keyframes move-mountain {
+	/*THIS ONE SEEMS LEGIT FOR NOW*/
+	/*OUR KEY FRAME SEQUENCE GOES THROUGH OUR 10,000+ PIXEL PNG*/
+	0%%  { background-position: 100% }
+	50%%  { background-position: 1050% }
+}
+
+@-webkit-keyframes move-first-clouds {
+	0%%  { background-position: 100% }
+	50%%  { background-position: 1050% }
+}
+
+@-webkit-keyframes move-second-clouds {
+	0%%  { background-position: 100% }
+	50%%  { background-position: 1050% }
+}
+
+@-webkit-keyframes move-ground {
+	/*OUR KEY FRAME SEQUENCE GOES THROUGH OUR 10,000+ PIXEL PNG*/
+	0%%  { background-position: 100% }
+	50%%  { background-position: 3050% }
+}
+
+@-webkit-keyframes move-cactus {
+	/*OUR KEY FRAME SEQUENCE GOES THROUGH OUR 10,000+ PIXEL PNG*/
+	0%%  { background-position: 100% }
+	50%%  { background-position: 7050% }
+}
+
